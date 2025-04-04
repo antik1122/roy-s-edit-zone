@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roy's Edit Zone - Photographer Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Global Styles */
+    * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+    body { font-family: 'Roboto', sans-serif; background: linear-gradient(135deg, #AFDDE5, #E5F6F7); color: #003135; line-height: 1.6; overflow-x: hidden; }
+    header { background: linear-gradient(to right, #003135, #024950); color: #AFDDE5; padding: 20px 0; text-align: center; animation: fadeIn 1s ease forwards; }
+    header h1 { font-size: 3.5em; font-weight: bold; letter-spacing: 3px; }
+    .personal-section { text-align: center; margin: 30px 0; padding: 20px; background-color: #024950; border-radius: 8px; animation: fadeIn 2s ease forwards; }
+    .personal-section img { width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 5px solid #0FA4AF; }
+    .personal-section h2 { font-size: 2.5em; margin-top: 15px; }
+    .personal-section p { font-size: 1.2em; color: #0FA4AF; }
+    nav ul { display: flex; justify-content: center; list-style: none; margin: 20px 0; background-color: #024950; padding: 10px; border-radius: 8px; animation: fadeIn 2.5s ease forwards; }
+    nav ul li { margin: 0 15px; }
+    nav ul li a { color: #AFDDE5; text-decoration: none; font-size: 1.2em; padding: 8px 12px; border-radius: 5px; transition: background-color 0.3s, transform 0.3s; }
+    nav ul li a:hover { background-color: #0FA4AF; transform: scale(1.1); }
+    #portfolio { padding: 50px 0; text-align: center; }
+    #portfolio h2 { font-size: 2.5em; color: #D83F87; margin-bottom: 30px; animation: fadeIn 3s ease forwards; }
+    .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px; max-width: 1200px; margin: auto; padding: 0 20px; animation: fadeInUp 2s ease forwards; }
+    .gallery img { width: 100%; height: 250px; object-fit: cover; border-radius: 10px; transition: transform 0.4s, box-shadow 0.4s; }
+    .gallery img:hover { transform: scale(1.05); box-shadow: 0 8px 16px rgba(0,0,0,0.4); }
+    #about, #contact { padding: 50px 20px; text-align: center; animation: fadeIn 2s ease forwards; }
+    #about { background-color: #024950; color: #AFDDE5; }
+    #about h2, #contact h2 { font-size: 2.5em; margin-bottom: 20px; color: #0FA4AF; }
+    #about p, #contact p { font-size: 1.2em; max-width: 800px; margin: auto; }
+    #contact { background-color: #003135; }
+    .social-links { display: flex; justify-content: center; list-style: none; margin-top: 20px; }
+    .social-links li { margin: 0 15px; }
+    .social-links li a { font-size: 2em; color: #AFDDE5; transition: color 0.3s; }
+    .social-links li a:hover { color: #0FA4AF; }
+    footer { background-color: #024950; color: #AFDDE5; text-align: center; padding: 20px; font-size: 1em; }
+    @keyframes fadeIn { from {opacity: 0;} to {opacity: 1;} }
+    @keyframes fadeInUp { from {opacity: 0; transform: translateY(50px);} to {opacity: 1; transform: translateY(0);} }
+  </style>
+</head>
+<body>
+
+<header><h1>Roy's Edit Zone</h1></header>
+
+<section class="personal-section">
+  <img src="profile.jpg" alt="Roy Antik">
+  <h2>Roy Antik</h2>
+  <p>Your Professional Photographer</p>
+</section>
+
+<nav>
+  <ul>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#about">About Me</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section id="portfolio">
+  <h2>Photo Gallery</h2>
+  <div class="gallery">
+    <img src="photo1.jpg" alt="Image 1">
+    <img src="photo2.jpg" alt="Image 2">
+    <img src="photo3.jpg" alt="Image 3">
+    <img src="photo4.jpg" alt="Image 4">
+    <img src="photo5.jpg" alt="Image 5">
+  </div>
+</section>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>I am a passionate photographer capturing the moments that matter most. I specialize in portrait, event, and landscape photography. Feel free to explore my work and contact me for any inquiries.</p>
+</section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+  <ul class="social-links">
+    <li><a href="https://www.instagram.com/roy_antik_404" target="_blank">Instagram</a></li>
+    <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+    <li><a href="https://wa.me/01405974454" target="_blank">WhatsApp</a></li>
+  </ul>
+</section>
+
+<footer>
+  <p>&copy; 2025 Roy's Edit Zone | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
