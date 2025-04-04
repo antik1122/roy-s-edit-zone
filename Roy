@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roy's Edit Zone - Photographer Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Times+New+Roman&family=Georgia&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #AFDDE5; /* Soft Light Blue */
+            color: #003135; /* Deep Teal */
+            line-height: 1.6;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #003135; /* Deep Teal */
+            color: #AFDDE5; /* Soft Light Blue */
+            padding: 20px 0;
+        }
+
+        header h1 {
+            text-align: center;
+            font-size: 3.5em;
+            font-family: 'Times New Roman', serif;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+
+        /* Personal Section */
+        .personal-section {
+            text-align: center;
+            margin: 30px 0;
+            padding: 20px;
+            background-color: #024950; /* Darker Blue-Green */
+            border-radius: 8px;
+        }
+
+        .personal-section img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #0FA4AF; /* Light Teal */
+        }
+
+        .personal-section h2 {
+            font-size: 2.5em;
+            margin-top: 15px;
+            font-family: 'Times New Roman', serif;
+        }
+
+        .personal-section p {
+            font-size: 1.2em;
+            color: #0FA4AF; /* Light Teal */
+        }
+
+        /* Navigation Section */
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin-top: 30px;
+            padding: 10px;
+            background-color: #024950; /* Darker Blue-Green */
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: #AFDDE5; /* Soft Light Blue */
+            text-decoration: none;
+            font-size: 1.3em;
+            padding: 10px 15px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #0FA4AF; /* Light Teal */
+            border-radius: 5px;
+        }
+
+        /* Portfolio Section */
+        #portfolio {
+            background-color: #AFDDE5; /* Soft Light Blue */
+            padding: 50px 0;
+        }
+
+        #portfolio h2 {
+            text-align: center;
+            font-size: 2.5em;
+            color: #D83F87; /* Vibrant Pinkish-Red */
+            margin-bottom: 30px;
+            font-family: 'Times New Roman', serif;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 0 30px;
+        }
+
+        .photo-box {
+            background-color: #964734; /* Warm Earthy Brown */
+            height: 250px;
+            color: #AFDDE5; /* Soft Light Blue */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5em;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s;
+        }
+
+        .photo-box:hover {
+            background-color: #0FA4AF; /* Light Teal */
+        }
+
+        /* About Section */
+        #about {
+            padding: 50px 0;
+            background-color: #024950; /* Darker Blue-Green */
+            text-align: center;
+        }
+
+        #about h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #0FA4AF; /* Light Teal */
+            font-family: 'Times New Roman', serif;
+        }
+
+        #about p {
+            font-size: 1.3em;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Contact Section */
+        #contact {
+            padding: 50px 0;
+            background-color: #003135; /* Deep Teal */
+            text-align: center;
+        }
+
+        #contact h2 {
+            font-size: 2.5em;
+            color: #AFDDE5; /* Soft Light Blue */
+            margin-bottom: 30px;
+            font-family: 'Times New Roman', serif;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin-bottom: 30px;
+        }
+
+        .social-links li {
+            margin: 0 20px;
+        }
+
+        .social-links li a {
+            color: #AFDDE5; /* Soft Light Blue */
+            text-decoration: none;
+            font-size: 2em;
+        }
+
+        .social-links li a:hover {
+            color: #0FA4AF; /* Light Teal */
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #024950; /* Darker Blue-Green */
+            color: #AFDDE5; /* Soft Light Blue */
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Roy's Edit Zone</h1>
+        </div>
+    </header>
+
+    <!-- Personal Section -->
+    <section class="personal-section">
+        <img src="file:///D:/Games/WhatsApp%20Image%202025-04-03%20at%2011.41.10_944325bd.jpg" alt="Roy Antik">
+        <h2>Roy Antik</h2>
+        <p>Your Professional Photographer</p>
+    </section>
+
+    <!-- Navigation Section -->
+    <nav>
+        <ul>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <div class="container">
+           <!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Gallery</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 10px;
+      max-width: 800px;
+      margin: auto;
+    }
+    .image-slot {
+      background: #1e1e1e;
+      padding: 10px;
+      border-radius: 10px;
+      text-align: center;
+    }
+    .image-slot img {
+      max-width: 100%;
+      max-height: 150px;
+      margin-top: 5px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Photo Gallery</h2>
+  <div class="grid">
+    <div class='image-slot'> <img src="file:///D:/Games/WhatsApp%20Image%202025-04-03%20at%2012.04.00_3aff547f.jpg" alt='Image 1'></div>
+    <div class='image-slot'> <img src="file:///D:/Games/WhatsApp%20Image%202025-04-03%20at%2012.04.00_4a312f9f.jpg" alt='Image 2'></div>
+    <div class='image-slot'> <img src="file:///D:/Games/WhatsApp%20Image%202025-04-03%20at%2012.04.01_771df6d7.jpg" alt='Image 3'></div>
+    <div class='image-slot'> <img src="file:///D:/Games/WhatsApp%20Image%202025-04-03%20at%2012.04.01_a7f29a36.jpg" alt='Image 4'></div>
+    <div class='image-slot'> <img src="file:///D:/Games/WhatsApp%20Image%202025-04-03%20at%2012.04.03_4d198e9b.jpg" alt='Image 5'></div>
+    <div class='image-slot'> <img src="file:///D:/Games/WhatsApp%20Image%202025-04-03%20at%2012.04.02_8a203373.jpg" alt='Image 6'></div>
+    <div class='image-slot'> <img src="file:///D:/Games/WhatsApp%20Image%202025-04-03%20at%2012.04.02_9c12e439.jpg" alt='Image 7'></div>
+    <div class='image-slot'> <img src="file:///D:/Games/WhatsApp%20Image%202025-04-03%20at%2012.04.02_ab787d7d.jpg" alt='Image 8'></div>
+    <div class='image-slot'> <img src= "file:///D:/Games/WhatsApp%20Image%202025-04-03%20at%2012.04.03_4d198e9b.jpg" alt='Image 9'></div>
+    <div class='image-slot'> <img src="file:///D:/Games/WhatsApp%20Image%202025-04-03%20at%2012.04.03_dd3dce4e.jpg" alt='Image 10'></div>
+    <div class='image-slot'> <img src="file:///D:/Games/WhatsApp%20Image%202025-04-03%20at%2012.04.04_127ee4f1.jpg" alt='Image 11'></div>
+    <div class='image-slot'> <img src="file:///D:/Games/WhatsApp%20Image%202025-04-04%20at%2020.58.50_ac1ed83a.jpg" alt='Image 12'></div>
+  </div>
+</body>
+</html>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am a passionate photographer capturing the moments that matter most. I specialize in portrait, event, and landscape photography. Feel free to explore my work and contact me for any inquiries.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <ul class="social-links">
+                <li><a href="https://www.instagram.com/roy_antik_404?igsh=cmt5MWdoazcxdjZt" target="_blank">Instagram</a></li>
+                <li><a href="https://www.facebook.com/share/15tGTDqMgh/" target="_blank">Facebook</a></li>
+                <li><a href="https://wa.me/01405974454" target="_blank">WhatsApp</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Roy's Edit Zone | All Rights Reserved</p>
+        </div>
+    </footer>
+
+</body>
+</html>
